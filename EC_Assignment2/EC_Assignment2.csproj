@@ -113,6 +113,8 @@
     <Content Include="admin\expenseMod.aspx" />
     <Content Include="admin\monthlyexpenses.aspx" />
     <Content Include="App_Readme\Elmah.txt" />
+    <Content Include="error.aspx" />
+    <Content Include="error404.aspx" />
     <Content Include="login.aspx" />
     <Content Include="logout.aspx" />
     <Content Include="admin\main-menu.aspx" />
@@ -239,6 +241,20 @@
     </Compile>
     <Compile Include="admin\departments.aspx.designer.cs">
       <DependentUpon>departments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="error.aspx.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="error.aspx.designer.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="error404.aspx.cs">
+      <DependentUpon>error404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="error404.aspx.designer.cs">
+      <DependentUpon>error404.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
