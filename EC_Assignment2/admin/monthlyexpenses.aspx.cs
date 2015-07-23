@@ -24,8 +24,8 @@ namespace EC_Assignment2.admin
                 Session["SortDirection"] = "ASC";
                 getMonthly();
             }
-        }
-
+        } 
+         
         protected void grdMonthly_Sorting(object sender, GridViewSortEventArgs e)
         {
             //get the column to sort by
@@ -57,7 +57,7 @@ namespace EC_Assignment2.admin
 
                 var objE = (from a in db.Accounts
                             select new { a.Category.CategoryName, a.AccountName });
-                  d
+                
                 //bind the result to the gridview
                 grdMonthly.DataSource = objE.AsQueryable().OrderBy(SortString).ToList();
                 grdMonthly.DataBind();
