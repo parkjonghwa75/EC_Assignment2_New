@@ -57,7 +57,7 @@ namespace EC_Assignment2.admin
 
                 var objE = (from a in db.Accounts
                             select new { a.Category.CategoryName, a.AccountName });
-
+                 
                 //bind the result to the gridview
                 grdMonthly.DataSource = objE.AsQueryable().OrderBy(SortString).ToList();
                 grdMonthly.DataBind();
